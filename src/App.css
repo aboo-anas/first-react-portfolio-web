@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary-dark: rgb(112, 107, 107);
+  --top-focus: #fab900;
+  --focus-dark: rgb(255,255,255,0);
+
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styling starts here */
+.logo{
+  width: 5rem;
+  height: 5rem;
+}
+
+nav {
+  background: var(--primary-dark) !important;
+}
+nav a{
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff !important;
+  margin: 0.1rem 1rem;
+  border-top: 0.1875rem solid var(--focus-dark);
+  
+}
+
+nav a img{
+  max-width: 15.25rem;
+  padding: 0rem !important;
+  height: 5rem !important;
+
+}
+
+nav .nav-item:focus{
+  border-top: 0.1875rem solid var(--top-focus);
+
+}
